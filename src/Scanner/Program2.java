@@ -40,7 +40,7 @@ public class Program2 {
             String productName = sc.nextLine();
         } else if (n == 4) {
             System.out.println("== 4. xóa sản phẩm");
-            System.out.println("xóa sản phẩm");
+            System.out.println("Xóa sản phẩm");
             sc = new Scanner(System.in);
             String productName = sc.nextLine();
         } else if (n == 5) {
