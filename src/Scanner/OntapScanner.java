@@ -48,7 +48,10 @@ public class OntapScanner {
 //        else {
 //            System.out.println("Tuổi vừa nhập: " + tuoi + " : Tuổi hợp lệ");
 //        }
-//        // câu 6 ax + b = 0
+//
+//
+//        // câu 6: không có ;
+//        // câu 7 ax + b = 0
 //        System.out.print("Nhập a: ");
 //        double a = sc.nextDouble();
 //        System.out.print("Nhập b: ");
@@ -65,7 +68,7 @@ public class OntapScanner {
 //            System.out.println("Phương trình có nghiệm là: " + nghiemX);
 //        }
 //
-//        // Câu 7//
+//        // Câu 8//
 //        System.out.print("Nhập tên: ");
 //        String fullName = sc.nextLine();
 //        int namSinh;
@@ -86,29 +89,54 @@ public class OntapScanner {
 //                sc.nextLine();
 //            }
 //        }
-        // cau 8//
+//        // cau 9//
+//
+//        while (true) {
+//            try {
+//                System.out.print("Nhập vào a:");
+//                int a = sc.nextInt();
+//                System.out.print("Nhập vào b:");
+//                int b = sc.nextInt();
+//                System.out.print("Nhập vào c:");
+//                int c = sc.nextInt();
+//                if (a > 0 & b > 0 & c > 0 & a + b > c & a + c > b & b + c > a) {
+//                    System.out.println("=== 3 cạnh nhập vào đạp ứng là 1 tam giác ===");
+//                    break;
+//                } else {
+//                    System.out.println("=== 3 cạnh nhập vào không đáp ứng là 3 cạnh của tam giá ===");
+//                    System.out.println("=> Điều kiện: tổng 2 cạnh bất kỳ > độ dài cạnh còn lại. <=");
+//                }
+//
+//            } catch (Exception e) {
+//                System.out.println("Vui lòng nhập lại a, b, c!");
+//                sc.nextInt();
+//            }
+//        }
 
-        while (true) {
-            try {
-                System.out.print("Nhập vào a:");
-                int a = sc.nextInt();
-                System.out.print("Nhập vào b:");
-                int b = sc.nextInt();
-                System.out.print("Nhập vào c:");
-                int c = sc.nextInt();
-                if (a > 0 & b > 0 & c > 0 & a + b > c & a + c > b & b + c > a) {
-                    System.out.println("=== 3 cạnh nhập vào đạp ứng là 1 tam giác ===");
-                    break;
-                } else {
-                    System.out.println("=== 3 cạnh nhập vào không đáp ứng là 3 cạnh của tam giá ===");
-                    System.out.println("=> Điều kiện: tổng 2 cạnh bất kỳ > độ dài cạnh còn lại. <=");
-                }
 
-            } catch (Exception e) {
-                System.out.println("Vui lòng nhập lại a, b, c!");
-                sc.nextLine();
-            }
+        // câu10//
+        System.out.print("Nhập số n: ");
+        int n = sc.nextInt();
+        System.out.println("Bảng cửu chương của " + n + ":");
+        for (int i = 1; i <= 10;n<10; i++) {
+            System.out.println(n + " x " + i + " = " + (n * i));
         }
+        sc.close();
+
+        // câu 11//
+        System.out.print("Nhập vào 1 chuỗi: ");
+        String chuoi = sc.nextLine();
+        System.out.println("Chuỗi vừa nhập: ");
+        if(chuoi.length()){
+            System.out.println("số chuỗi vừa nhập:");
+        }
+        else {
+            System.out.println("kết thúc");
+        }
+
+
+
+
 
 
 
