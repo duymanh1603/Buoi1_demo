@@ -13,21 +13,21 @@ public class OntapScanner {
 //        }else {
 //            System.out.println("Xin chào, " + ten);
 //        }
-//
+
 //        // câu 2//
 //        System.out.print("Số nguyên 1: ");
 //        int x = sc.nextInt();
 //        System.out.print("Số nguyên 2: ");
 //        int y = sc.nextInt();
-//        int Tong = x + y;
-//        System.out.println("tổng của 2 số là: " + Tong);
-//
+//        int tong = x + y;
+//        System.out.println("Tổng của 2 số là: " + Tong);
+
 //        // câu 3//
 //        System.out.print("Nhập vào bán kình: ");
 //        double bk = sc.nextDouble();
 //        double pi = 3.14;
-//        double S =  pi * bk *2;
-//        System.out.println("Diện tích của hình tròn: " + S);
+//        double s =  pi * bk * bk;
+//        System.out.println("Diện tích của hình tròn: " + s);
 //
 //        // câu 4//
 //        System.out.print("Nhập vào một số nguyên: ");
@@ -38,41 +38,39 @@ public class OntapScanner {
 //        } else {
 //            System.out.println("Số nguyên vừa nhập: "+ soNguyen + " là số lẻ");
 //        }
-//
+
 //        //câu 5//
 //        System.out.print("Nhập tuổi: ");
 //        int tuoi = sc.nextInt();
 //        if(tuoi < 0 || tuoi > 150){
 //            System.out.println("Tuổi vừa nhập: " + tuoi + " : Sai, Tuổi không hợp lệ");
-//        }
-//        else {
+//        } else {
 //            System.out.println("Tuổi vừa nhập: " + tuoi + " : Tuổi hợp lệ");
 //        }
-//
-//
-//        // câu 6: không có ;
+
+
+        // câu 6: không có ;
 //        // câu 7 ax + b = 0
 //        System.out.print("Nhập a: ");
 //        double a = sc.nextDouble();
 //        System.out.print("Nhập b: ");
 //        double b = sc.nextDouble();
 //
-//        if( a==0 ){
+//        if(a==0) {
 //            if(b == 0){
 //                System.out.println("Phương trình vô số nghiệm.");
-//            }
+//            }else{
 //            System.out.println("Phương trình vô nghiệm");
-//        }
-//        else {
+//        } else{
 //            double nghiemX = -b /a;
 //            System.out.println("Phương trình có nghiệm là: " + nghiemX);
 //        }
-//
-//        // Câu 8//
+
+        // Câu 8//
 //        System.out.print("Nhập tên: ");
 //        String fullName = sc.nextLine();
 //        int namSinh;
-//        while (true) {
+//        while(true) {
 //            try {
 //                System.out.print("Nhập năm sinh: ");
 //                namSinh = sc.nextInt();
@@ -89,8 +87,8 @@ public class OntapScanner {
 //                sc.nextLine();
 //            }
 //        }
-//        // cau 9//
-//
+        // cau 9//
+
 //        while (true) {
 //            try {
 //                System.out.print("Nhập vào a:");
@@ -99,7 +97,7 @@ public class OntapScanner {
 //                int b = sc.nextInt();
 //                System.out.print("Nhập vào c:");
 //                int c = sc.nextInt();
-//                if (a > 0 & b > 0 & c > 0 & a + b > c & a + c > b & b + c > a) {
+//                if (a > 0 && b > 0 && c > 0 && a + b > c && a + c > b && b + c > a) {
 //                    System.out.println("=== 3 cạnh nhập vào đạp ứng là 1 tam giác ===");
 //                    break;
 //                } else {
@@ -114,35 +112,27 @@ public class OntapScanner {
 //        }
 
 
-        // câu10//
+         //câu10//
         System.out.print("Nhập số n: ");
         int n = sc.nextInt();
-        System.out.println("Bảng cửu chương của " + n + ":");
-        for (int i = 1; i <= 10;n<10; i++) {
-            System.out.println(n + " x " + i + " = " + (n * i));
+        for (int num = 1; num <= n; num++) {
+            System.out.println("Bảng cửu chương của " + num + ":");
+            for (int i = 1; i <= 10; i++) {
+                System.out.println(num + " x " + i + " = " + (num * i));
+            }
+            System.out.println();
         }
         sc.close();
 
-        // câu 11//
-        System.out.print("Nhập vào 1 chuỗi: ");
-        String chuoi = sc.nextLine();
-        System.out.println("Chuỗi vừa nhập: ");
-        if(chuoi.length()){
-            System.out.println("số chuỗi vừa nhập:");
-        }
-        else {
-            System.out.println("kết thúc");
-        }
+//        // câu 11//
+//        System.out.print("Nhập vào 1 chuỗi: ");
+//        String chuoi = sc.nextLine();
+//        System.out.println("Chuỗi vừa nhập: " + chuoi + " Số ký tự: " + chuoi.length() );
 
 
 
 
-
-
-
-
-
-
+        // làm lại bảng cửu chương
 
     }
 }
